@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WATER-ON-CALL-mvp/static/css/main.4a36a561.chunk.css",
+    "main.js": "/WATER-ON-CALL-mvp/static/js/main.a2a371bb.chunk.js",
+    "main.js.map": "/WATER-ON-CALL-mvp/static/js/main.a2a371bb.chunk.js.map",
+    "runtime~main.js": "/WATER-ON-CALL-mvp/static/js/runtime~main.6c71f7ce.js",
+    "runtime~main.js.map": "/WATER-ON-CALL-mvp/static/js/runtime~main.6c71f7ce.js.map",
+    "static/js/2.3a278e4d.chunk.js": "/WATER-ON-CALL-mvp/static/js/2.3a278e4d.chunk.js",
+    "static/js/2.3a278e4d.chunk.js.map": "/WATER-ON-CALL-mvp/static/js/2.3a278e4d.chunk.js.map",
+    "index.html": "/WATER-ON-CALL-mvp/index.html",
+    "precache-manifest.b1c0d14dc5115643265e9f894bad8852.js": "/WATER-ON-CALL-mvp/precache-manifest.b1c0d14dc5115643265e9f894bad8852.js",
+    "service-worker.js": "/WATER-ON-CALL-mvp/service-worker.js",
+    "static/css/main.4a36a561.chunk.css.map": "/WATER-ON-CALL-mvp/static/css/main.4a36a561.chunk.css.map"
+  }
+}

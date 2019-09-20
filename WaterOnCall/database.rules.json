@@ -1,0 +1,56 @@
+{
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": "auth!=null",
+    ".write": true, // it is set true to let the users on signup add their data
+     //for Users 
+   "User":{
+    "$User":{//$ means any user 
+      
+         "phone_number":{
+         ".validate":"newData.isNumber()&& newData.val().length==8"
+       },
+   "First_Name":{// first name less than 20 characters and not null
+         ".validate":"newData.isString()&& newData.val().length<20 "
+       },
+    "Last_Name":{// last name less than 20 characters and not null
+         ".validate":"newData.isString()&& newData.val().length<20"
+       },
+    "Location":{// place less than 20 characters and not null
+         ".validate":"newData.isString()&& newData.val().length<20 "
+       },
+         ".read":"data.parent().child('Vendor').child('First_Name').val()== auth.uid|| data.parent().child('Status').val()== 'True'||data.parent().child('User').child('Place').val()== data.parent().child('Vendor').child('Working Location').val()"
+     
+
+    // also search on how to make users access specific vendors based on their place
+    //  read the vendor's place and check his status active or not and then read his number
+    // iza ma zabtit 3mol one database Users w ktob type (vendor of customer)
+     
+  
+    }
+  },
+    //---------------
+   //for Vendor 
+   "Vendor":{
+    "$Vendor":{//$ means any user
+     
+         "Phone Number":{
+         ".validate":"newData.isNumber()&& newData.val().length==8"
+       },
+   "First_Name":{// first name less than 20 characters and not null
+         ".validate":"newData.isString()&& newData.val().length <20 && newData.val()!=null"
+       },
+    "Last_Name":{// last name less than 20 characters and not null
+         ".validate":"newData.isString()&& newData.val().length<20 "
+       },
+    "Working Location":{// place less than 20 characters and not null
+         ".validate":"newData.isString()&& newData.val().length<20 "
+       },
+    "Status":{// to check that the vendor is active or not 
+      ".validate":"newData.isBoolean()"
+    }  
+    
+    }
+  }//---------------
+  }
+}

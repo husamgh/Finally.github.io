@@ -1,0 +1,11 @@
+.errorMessage{
+	font-size: 13px;
+    color: red;
+    width: 440px;
+    margin: 0 0 8px 0;
+    text-align: left;
+}
+
+.SignInModal {
+    padding-bottom: 0 !important;
+}
